@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+const defaultName = 'Dear Friend';
+
 @Component({
   selector: 'app-hello',
   templateUrl: './hello.component.html',
@@ -7,11 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HelloComponent implements OnInit {
-  defaultName = 'Dear Friend';
-  user: string = this.defaultName;
+  userName: string = defaultName;
 
   changeUser() {
-    this.user = this.defaultName;
+    this.userName = defaultName;
   }
   ngOnInit() {
   }
