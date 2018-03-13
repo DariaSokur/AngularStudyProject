@@ -1,0 +1,6 @@
+<ul class="contacts">
+  <li *ngFor="let contact of contacts" (click)="onContactClick(contact)"> <!-- [class.selected]="contact === selectedContact"-->
+    <span class="badge">{{contact.id}}</span> {{contact.name}} {{contact.surname}}
+  </li>
+</ul>
+<button (click)="addContactBtnClick()">Add new contact</button>

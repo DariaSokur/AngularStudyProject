@@ -1,0 +1,3 @@
+<app-contacts-list [contacts]="contacts" (selectContact)="onContactClick($event)" (addContact)="onContactAdd($event)"></app-contacts-list>
+
+<app-contact-details [contact]="selectedContact" (updateContact)="onContactUpdate($event)" (deleteContact)="onContactDelete($event)" *ngIf="selectedContact"></app-contact-details>

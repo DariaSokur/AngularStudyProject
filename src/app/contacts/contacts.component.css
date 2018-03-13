@@ -1,0 +1,9 @@
+app-contacts-list {
+  float: left;
+  width: 48%
+}
+app-contact-details {
+  float: right;
+  width: 48%;
+  margin-top: 20px;
+}
